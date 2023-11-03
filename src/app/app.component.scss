@@ -1,0 +1,211 @@
+:host {
+  display: flex;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-layout {
+  height: 100vh;
+}
+
+.menu-sidebar {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+}
+
+.header-trigger {
+  height: 64px;
+  padding: 20px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s, padding 0s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.sidebar-logo {
+  position: relative;
+  height: 64px;
+  padding-left: 24px;
+  overflow: hidden;
+  line-height: 64px;
+  background: #001529;
+  transition: all .3s;
+}
+
+.sidebar-logo img {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+
+.sidebar-logo h1 {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+}
+
+nz-header {
+  padding: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+nz-link {
+  font-size: 17px;
+  padding: 8px 0 8px 16px;
+}
+
+nz-footer {
+  position: fixed;
+  background: #fff;
+  width: 270px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nz-footer a {
+  color: #001529;
+}
+
+[nz-icon] {
+  margin-right: 6px;
+  font-size: 24px;
+}
+
+.app-header {
+  position: relative;
+  height: 64px;
+  padding: 0;
+  background: #fff;
+}
+
+nz-content {
+  margin: 24px;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  height: 100%;
+}
+
+.ant-layout-sider,
+.sidebar-logo {
+  background: #fff;
+}
+
+.ant-layout {
+
+  background: #fff !important;
+}
+
+h1 {
+  color: #001529 !important;
+}
+
+.menu-sidebar {
+  padding: 10px 10px 10px 40px;
+}
+
+.ant-anchor-wrapper {
+  top: 15rem !important;
+}
+
+.box-post {
+  flex: 3 1;
+  border: 1px solid hsla(0, 1%, 61%, .74);
+  border-radius: 8px;
+  padding: 2rem 2.5rem 0;
+  background-color: #fff;
+  box-shadow: 0 0 20px #9c9b9b;
+}
+
+.header-post {
+  text-align: left;
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#introduction .header-post {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+#introduction h3 {
+  color: #fff;
+}
+
+.body-post {
+  font-size: 17px;
+  padding-left: 10px;
+  margin: 20px;
+}
+
+.mar-b {
+  margin-bottom: 3rem;
+}
+
+.body-post span {
+  line-height: 3.5ch;
+  font-size: 16px;
+}
+
+#installation .header-post {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.text-post {
+  font-size: 16px;
+  background-color: hsla(0, 1%, 84%, .295);
+  border-radius: 6px;
+  line-height: 1.4;
+  padding: 10px;
+  margin: 10px;
+}
+
+#firstproject .header-post {
+  background: linear-gradient(135deg, #43976E, #A7D0A3);
+}
+
+.img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.img-display img {
+  display: block;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  max-width: 680px;
+}
+
+#customized .header-post {
+  background: linear-gradient(135deg, #5f4737, #c16e67);
+}
+
+#migration .header-post {
+  background: linear-gradient(135deg, #C90002,
+      #FE876F);
+}
+
+
+#components .header-post {
+  background: linear-gradient(135deg, #464879,
+      #5d7db3);
+}
+
+[nz-button] {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}

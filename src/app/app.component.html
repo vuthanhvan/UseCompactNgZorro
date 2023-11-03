@@ -1,0 +1,329 @@
+<nz-layout>
+  <nz-sider class="menu-sidebar" nzWidth="20rem" id="elementToHide" [hidden]="isSmallScreen()">
+    <div style="height: 100px;"></div>
+    <nz-anchor nzIcon="dashboard">
+      <div style="margin: 23px;">
+        <nz-link nzHref="#introduction" nzTitle="Introduction"></nz-link>
+        <nz-link nzHref="#installation" nzTitle="Installation"></nz-link>
+        <nz-link nzHref="#firstproject" nzTitle="First Project Development">
+          <nz-link nzHref="#installationFirst" nzTitle="Installation"></nz-link>
+          <nz-link nzHref="#createFirst" nzTitle="Create a New Project"></nz-link>
+          <nz-link nzHref="#install" nzTitle="Install ng-zorro-antd"></nz-link>
+        </nz-link>
+        <nz-link nzHref="#customized" nzTitle="Customized Build">
+        </nz-link>
+        <nz-link nzHref="#components" nzTitle="Components Overview">
+          <nz-link nzHref="#general" nzTitle="General"></nz-link>
+          <nz-link nzHref="#layout" nzTitle="Layout"></nz-link>
+          <nz-link nzHref="#navigation " nzTitle="Navigation "></nz-link>
+          <nz-link nzHref="#data " nzTitle="Data Entry"></nz-link>
+        </nz-link>
+        <nz-link nzHref="#migration" nzTitle="v16 Migration Guide"></nz-link>
+      </div>
+    </nz-anchor>
+    <nz-footer>
+      <div>From Nana***</div>
+      <div> <a href="#" target="_blank"><span nz-icon nzType="github" nzTheme="outline"></span></a>
+        <a href="https://www.linkedin.com/in/v%C5%A9-th%E1%BB%8B-thanh-v%C3%A2n-9a3502220/" target="_blank"><span
+            nz-icon nzType="linkedin" nzTheme="outline"></span></a>
+      </div>
+    </nz-footer>
+  </nz-sider>
+  <nz-layout style="margin-top: 30px;">
+    <h1 nz-typography style="text-align: center;">Create a simple project using NgZorro</h1>
+    <nz-content class="box-post">
+      <div class="inner-content">
+        <div id="introduction" class="mar-b">
+          <div class="header-post">
+            <h3 nz-typography>Introduction</h3>
+          </div>
+          <div class="body-post">
+            <h4 nz-typography><strong>Ant Design of Angular</strong></h4>
+            <p>An enterprise-class Angular UI component library based on Ant Design, all components are open source
+              and free to use under MIT license.</p>
+            <span class="img">
+              <nz-image-group>
+                <img nz-image width="150px" nzSrc="https://img.alicdn.com/tfs/TB1g.mWZAL0gK0jSZFtXXXQCXXa-200-200.svg"
+                  alt="" />
+                <img nz-image width="150px" nzSrc="https://img.alicdn.com/tfs/TB1Z0PywTtYBeNjy1XdXXXXyVXa-186-200.svg"
+                  alt="" />
+              </nz-image-group>
+            </span>
+            <br>
+            <hr>
+            <span nz-typography><strong>Version</strong></span>
+            <span nz-typography><mark>
+                <a href="https://www.npmjs.com/package/ng-zorro-antd" target="_blank">npm- v15.1.1</a>
+              </mark></span>
+            <br>
+            <span nz-typography><strong>Angular Support</strong></span>
+            <br>
+            <p>
+              <span nz-typography><kbd>ng-zorro-antd</kbd></span>
+              keeps the same major version with
+              <span nz-typography><kbd>@angular/core</kbd></span>
+              , now supports Angular
+              <span nz-typography><kbd>^16.0.0</kbd></span>.
+            </p>
+            <span nz-typography><strong>Design Specification</strong></span>
+            <br>
+            <p>
+              <span nz-typography><kbd>ng-zorro-antd</kbd></span>
+              synchronizes design specification with
+              <span nz-typography>
+                <a href="https://ant.design/docs/spec/introduce" target="_blank">Ant Design</a>
+              </span>
+              on a regular basis, you can check the log online.
+            </p>
+          </div>
+        </div>
+        <div id="installation" class="mar-b">
+          <div class="header-post">
+            <h3 nz-typography>Installation</h3>
+          </div>
+          <div class="body-post">
+            <p>
+              <span nz-typography><strong>We recommend using </strong></span>
+              <span nz-typography><kbd>@angular/cli</kbd></span>
+              <span nz-typography><strong>to install</strong></span>, it not only makes development easier，but also
+              allow
+              you to take advantage of the rich ecosystem of angular packages and tooling.
+            </p>
+            <p nz-typography nzCopyable nzCopyText="ng new PROJECT_NAME" class="text-post">
+              <span nz-typography><code>$ ng new PROJECT_NAME
+</code></span>
+            </p>
+            <p nz-typography nzCopyable nzCopyText="cd PROJECT_NAME" class="text-post">
+              <span nz-typography><code>
+$ cd PROJECT_NAME</code></span>
+            </p>
+            <p nz-typography nzCopyable nzCopyText="ng add ng-zorro-antd" class="text-post">
+              <span nz-typography><code>
+$ ng add ng-zorro-antd</code></span>
+            </p>
+            <p>
+              <span nz-typography nzType="secondary" style="font-size: small;">More information about</span>
+              <span nz-typography style="font-size: small;"><kbd>@angular/cli</kbd></span>
+              <span nz-typography style="font-size: small;">
+                <a href="https://github.com/angular/angular-cli" target="_blank"> Here </a>
+              </span>
+            </p>
+            <p>You can also install ng-zorro-antd with npm or yarn
+              <span nz-typography style="font-size: small;"><kbd>ng-zorro-antd</kbd></span>
+              with npm or yarn
+            </p>
+            <p nz-typography nzCopyable nzCopyText="npm install ng-zorro-antd" class="text-post">
+              <span nz-typography><code>$ npm install ng-zorro-antd
+</code></span>
+            </p>
+          </div>
+        </div>
+        <div id="firstproject" class="mar-b">
+          <div class="header-post">
+            <h3 nz-typography>First Project Development</h3>
+          </div>
+          <div class="body-post">
+            <p>There are several engineering requirements during development, including compiling, debugging, proxying,
+              and packaging codes in TypeScript. We strongly encourage you to develop your project with the help of
+              Angular official CLI
+              <span nz-typography><kbd>@angular/cli</kbd></span>
+              . To be concise, a simple example is demonstrated below.
+            </p>
+            <hr>
+            <h4 nz-typography id="installationFirst"><strong>Installation</strong>
+            </h4>
+            <p>
+              <span nz-typography nzType="secondary" style="font-size: small;">Read the documentation of </span>
+              <span nz-typography style="font-size: small;">
+                <a href="https://angular.io/cli" target="_blank">Angular </a>
+              </span>
+              <span nz-typography nzType="secondary" style="font-size: small;">to explore more features.</span>
+            </p>
+            <p nz-typography nzCopyable nzCopyText="npm install -g @angular/cli" class="text-post">
+              <span nz-typography><code>$ npm install -g @angular/cli
+</code></span>
+            <p>Or</p>
+            <p nz-typography nzCopyable nzCopyText="yarn global add @angular/cli" class="text-post">
+              <span nz-typography><code>$ yarn global add @angular/cli
+</code></span>
+              <hr>
+            <h4 nz-typography id="createFirst"><strong>Create a New Project</strong>
+            </h4>
+            <p>The following command allows
+              <span nz-typography><kbd>@angular/cli</kbd></span>
+              to create a folder called
+              <span nz-typography><kbd>PROJECT-NAME</kbd></span>
+              under the current directory, with necessary dependencies.
+            </p>
+            <p nz-typography nzCopyable nzCopyText="ng new PROJECT_NAME" class="text-post">
+              <span nz-typography><code>$ ng new PROJECT_NAME
+</code></span>
+            </p>
+            <p><span nz-typography><kbd>@angular/cli</kbd></span> will run
+              <span nz-typography><kbd>npm install</kbd></span> or
+              <span nz-typography><kbd>yarn </kbd></span>after a project is created. You can run
+              <span nz-typography><kbd>npm install</kbd></span> or
+              <span nz-typography><kbd>yarn </kbd></span> by yourself if it fails.
+            </p>
+            <hr>
+            <h4 nz-typography id="install"><strong>Install ng-zorro-antd</strong>
+            </h4>
+            <p>After changing the directory to the newly created project, you can automatically run the following
+              commands to initialize the project's configuration, including importing i18n files and stylesheets and
+              loading initial modules.</p>
+            <p nz-typography nzCopyable nzCopyText="cd PROJECT_NAME" class="text-post">
+              <span nz-typography><code>
+$ cd PROJECT_NAME</code></span>
+            </p>
+            <p nz-typography nzCopyable nzCopyText="ng add ng-zorro-antd" class="text-post">
+              <span nz-typography><code>
+$ ng add ng-zorro-antd</code></span>
+            </p>
+            <p>Run the command
+              <span nz-typography><kbd>ng add ng-zorro-antd</kbd></span> under your project directory, and follow the
+              options to configure settings including whether you want to import i18n files and stylesheets, and load
+              initial modules.
+            </p>
+            <span class="img">
+              <nz-image-group>
+                <img nz-image width="350px" nzSrc="https://img.alicdn.com/tfs/TB19fFHdkxz61VjSZFtXXaDSVXa-680-243.svg"
+                  alt="" />
+              </nz-image-group>
+            </span>
+            <p>
+              In the meantime, you can choose an existing project template while creating your project, and then develop
+              the project on the basis of it. </p>
+            <span class="img img-display">
+              <nz-image-group>
+                <img nz-image width="350px" nzSrc="https://img.alicdn.com/tfs/TB1IC0TeEWF3KVjSZPhXXXclXXa-2000-1078.png"
+                  alt="" />
+              </nz-image-group>
+            </span>
+          </div>
+        </div>
+        <div id="customized" class="mar-b">
+          <div class="header-post">
+            <h3 nz-typography>Customized Build</h3>
+          </div>
+          <div class="body-post">
+            <p>You may use any existing scaffold tools in the Angular ecosystem in order to customize the building
+              process. </p>
+          </div>
+        </div>
+        <div id="components" class="mar-b">
+          <div class="header-post">
+            <h3 nz-typography>Components Overview</h3>
+          </div>
+          <div class="body-post">
+            <p>
+              <span nz-typography><kbd>ng-zorro-antd</kbd></span>
+              is an Angular UI lib, follow Ant Design specification, to provide high quantity UI components for web
+              development.
+            </p>
+            <span style="font-size:15px; color: rgb(146, 142, 136); padding-left: 30px;">
+              Below I will give some examples</span>
+            <h4 nz-typography id="general"><strong>General</strong>
+            </h4>
+            Examples: Button
+            <p>To trigger an operation.
+            </p>
+            <button nz-button nzType="primary">Primary Button</button>
+            <button nz-button nzType="default">Default Button</button>
+            <button nz-button nzType="dashed">Dashed Button</button>
+            <button nz-button nzType="text">Text Button</button>
+            <a nz-button nzType="link">Link Button</a>
+            <br>
+            <button nz-button nzType="primary" (click)="open()">Open</button>
+            <nz-drawer [nzClosable]="false" [nzVisible]="visible" nzPlacement="bottom" nzTitle="When To Use"
+              (nzOnClose)="close()">
+              <ng-container *nzDrawerContent>
+                <p>A button means an operation (or a series of operations). Clicking a button will trigger corresponding
+                  business logic. </p>
+                <p>In Ant Design, we provide 4 types of buttons.
+                </p>
+                <ul>
+                  <li>Primary button: indicate the main action, one primary button at most in one section.
+                  </li>
+                  <li>Default button: indicate a series of actions without priority.
+                  </li>
+                  <li>Dashed button: used for adding action commonly.
+                  </li>
+                  <li>Text button: used for the most secondary action.
+                  </li>
+                  <li>Link button: used for external links.
+                  </li>
+                </ul>
+              </ng-container>
+            </nz-drawer>
+            <h4 nz-typography id="layout"><strong>Layout</strong>
+            </h4>
+
+
+
+            <br>
+            Examples: Collapse
+            <p>A content area which can be collapsed and expanded.</p>
+            <nz-collapse [nzExpandIconPosition]="expandIconPosition">
+              <nz-collapse-panel *ngFor="let panel of panels" [nzHeader]="panel.name" [nzActive]="panel.active"
+                [nzExtra]="extraTpl" [nzDisabled]="panel.disabled">
+                <p style="margin:0;">
+                  A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
+                  welcome
+                  guest in many households across the world.
+                </p>
+              </nz-collapse-panel>
+            </nz-collapse>
+            <ng-template #extraTpl>
+              <span nz-icon nzType="setting" (click)="$event.stopPropagation()"></span>
+            </ng-template>
+            <br />
+            <span>Expand Icon Position: </span>
+            <nz-select [(ngModel)]="expandIconPosition">
+              <nz-option nzValue="left" nzLabel="left"></nz-option>
+              <nz-option nzValue="right" nzLabel="right"></nz-option>
+            </nz-select>
+          </div>
+        </div>
+        <div id="migration" class="mar-b">
+          <div class="header-post">
+            <h3 nz-typography>v16 Migration Guide</h3>
+          </div>
+          <div class="body-post">
+            <p>This document will help you upgrade from <span nz-typography><kbd>ng-zorro-antd</kbd></span>
+              15.x version to 16.x version.</p>
+            <h4 nz-typography>Before upgrade</h4>
+            <ul>
+              <li>Make sure
+                <span nz-typography><kbd>Node.js</kbd></span>>=
+                <span nz-typography><kbd>16.13.0</kbd></span>or >=
+                <span nz-typography><kbd>18.10.0.</kbd></span>
+              </li>
+              <li>
+                Create a new branch, or use other methods to back up the current project.
+              </li>
+              <li>
+                Delete the package-lock.json file.
+              </li>
+            </ul>
+            <h4 nz-typography>1.Upgrade dependencies</h4>
+            <ul>
+              <li>Upgrade Angular to 16.x version, ref https://update.angular.io/.</li>
+              <li>Run
+                <span nz-typography><kbd>ng update @angular/cdk</kbd></span>, if you have used
+                <span nz-typography><kbd>@angular/cdk</kbd></span>.
+              </li>
+            </ul>
+            <h4 nz-typography>2.Upgrade NG-ZORRO</h4>
+            <ul>
+              <li>Run <span nz-typography><kbd>ng update ng-zorro-antd</kbd></span>.
+              </li>
+              <li>If any warning messages appear in the console, follow the prompts to modify the corresponding code.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nz-content>
+  </nz-layout>
+  <nz-back-top id="backTopHide" [hidden]="isBigScreen()"></nz-back-top>
+</nz-layout>

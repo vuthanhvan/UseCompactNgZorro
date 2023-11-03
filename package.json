@@ -1,0 +1,48 @@
+{
+  "name": "use-compact-ngzorro",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^16.2.0",
+    "@angular/common": "^16.2.11",
+    "@angular/compiler": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@angular/forms": "^16.2.0",
+    "@angular/platform-browser": "^16.2.0",
+    "@angular/platform-browser-dynamic": "^16.2.0",
+    "@angular/router": "^16.2.0",
+    "cron-parser": "^4.9.0",
+    "d3": "^7.8.5",
+    "dagre": "^0.8.5",
+    "dagre-compound": "^0.0.13",
+    "date-fns": "^2.30.0",
+    "monaco-editor": "^0.44.0",
+    "ng-zorro-antd": "^16.2.2",
+    "ngx-scrollreveal": "^3.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "^0.13.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.8",
+    "@angular/cli": "^16.2.8",
+    "@angular/compiler-cli": "^16.2.0",
+    "@types/d3-selection": "^3.0.8",
+    "@types/d3-zoom": "^3.0.6",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.1.3"
+  }
+}
